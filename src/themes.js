@@ -4,8 +4,8 @@ breakpoints.md = breakpoints[1]
 breakpoints.lg = breakpoints[2]
 
 const fonts = [
-  'Gilroy, Helvetica, Arial, sans-serif',
-  'Gilroy, Helvetica, Arial, sans-serif',
+  'GillSans, Helvetica, Arial, sans-serif',
+  'GillSans, Helvetica, Arial, sans-serif',
 ]
 fonts.head = fonts[0]
 fonts.body = fonts[1]
@@ -13,10 +13,11 @@ fonts.body = fonts[1]
 export const main = {
   breakpoints,
   colors: {
-    background: '#17061d',
-    backgroundInverted: '#f9f9f9',
+    background: '#ffffff',
     disabled: '#c9c9c9',
     danger: '#fa5847',
+    text: "#CACACA",
+    text1: "#989898",
   },
   fonts,
   fontSizes: [10, 12, 14, 16, 18, 20, 24, 32, 48],

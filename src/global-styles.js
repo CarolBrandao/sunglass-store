@@ -27,7 +27,7 @@ function CssFontFaces() {
         }
 
         @font-face {
-          font-family: 'Gilroy';
+          font-family: 'GillSans';
           src: url('/fonts/GillSansMTPro-ExtraBold.woff') format('woff'),
             url('/fonts/GillSansMTPro-ExtraBold.woff2') format('woff2');
           font-weight: bold;
