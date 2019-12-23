@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is basically two screens of a frontend application for a mockup sunglass e-commerce store. The product overview and a product detail screen.
 
 ## Available Scripts
 
