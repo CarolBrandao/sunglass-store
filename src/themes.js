@@ -1,7 +1,8 @@
-const breakpoints = ['500px', '800px', '1000px']
-breakpoints.sm = breakpoints[0]
-breakpoints.md = breakpoints[1]
-breakpoints.lg = breakpoints[2]
+const breakpoints = ['400px', '650px' , '800px', '1000px']
+
+const mq = breakpoints.map(
+  bp => `@media (max-width: ${bp})`
+)
 
 const fonts = [
   'GillSans, Helvetica, Arial, sans-serif',
@@ -12,6 +13,7 @@ fonts.body = fonts[1]
 
 export const main = {
   breakpoints,
+  mq,
   colors: {
     background: '#ffffff',
     disabled: '#c9c9c9',
