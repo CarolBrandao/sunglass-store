@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import PropTypes from 'prop-types'
 
 const Product = styled.div`
 	border: solid 1px white;
@@ -53,4 +54,10 @@ export function ProductCard(props){
 				</Description>
 		</Product>
 	)
+}
+
+ProductCard.propTypes = {
+	title: PropTypes.string,
+	description: PropTypes.string,
+	price: PropTypes.string,
 }

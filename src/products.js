@@ -34,41 +34,5 @@ export const products = [
 		"title": "aviator",
 		"description": "rayban",
 		"price": "$149"
-	},
-	{
-		"id": "7",
-		"title": "magnus",
-		"description": "harris",
-		"price": "$149"
-	},
-	{
-		"id": "8",
-		"title": "poolside",
-		"description": "blue",
-		"price": "$235"
-	},
-	{
-		"id": "9",
-		"title": "hsp",
-		"description": "lens",
-		"price": "$89"
-	},
-	{
-		"id": "10",
-		"title": "muse",
-		"description": "lacoste",
-		"price": "$359"
-	},
-	{
-		"id": "11",
-		"title": "3025",
-		"description": "rayban",
-		"price": "$289"
-	},
-	{
-		"id": "12",
-		"title": "aviator",
-		"description": "rayban",
-		"price": "$149"
 	}
 ]

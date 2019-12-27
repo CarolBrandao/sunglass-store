@@ -73,7 +73,7 @@ function CssBase() {
             backgroundColor: 'background',
             color: 'text',
             fontFamily: 'body',
-            fontSize: [2, 3],
+            fontSize: 2,
             overflowX: 'hidden',
             padding: '0px',
             margin: '0px',
