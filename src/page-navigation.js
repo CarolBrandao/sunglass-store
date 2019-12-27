@@ -57,14 +57,14 @@ const Item = styled.a`
      }`
   }
 `
-
+//TODO: Create pages
 const notAvailable = () => alert('Page not found')
 
 export function PageNavigation() {
 	return (
 		<React.Fragment>
 			<NavWrapper>
-				<img src="logo.svg" alt="logo" />
+				<img src="logo/logo.svg" alt="logo" />
 				<SideMenu onClick={notAvailable} />
 				<MainMenu>
 					<Items>
