@@ -1,4 +1,5 @@
-const breakpoints = ['400px', '650px' , '800px', '1000px']
+
+const breakpoints = ['500px', '650px' , '800px', '1000px', '1200px']
 
 const mq = breakpoints.map(
   bp => `@media (max-width: ${bp})`
@@ -18,8 +19,8 @@ export const main = {
     background: '#ffffff',
     disabled: '#c9c9c9',
     danger: '#fa5847',
-    text: "#CACACA",
-    text1: "#989898",
+    title: "#333333",
+    text: "#CACACA",  
   },
   fonts,
   fontSizes: [10, 12, 14, 16, 18, 20, 24, 32, 48],

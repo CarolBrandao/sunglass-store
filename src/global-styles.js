@@ -75,6 +75,8 @@ function CssBase() {
             fontFamily: 'body',
             fontSize: [2, 3],
             overflowX: 'hidden',
+            padding: '0px',
+            margin: '0px',
           })({ theme })}
         }
 
