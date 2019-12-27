@@ -39,6 +39,7 @@ const Description = styled.div`
   justify-content: space-between;
   text-transform: uppercase;
   color: ${props => props.theme.colors.text};
+  padding-top: 10px;
 `
 
 

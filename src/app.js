@@ -1,23 +1,27 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Route, Redirect, Link, BrowserRouter as Router } from 'react-router-dom'
+
+import * as serviceWorker from './serviceWorker'
 import * as themes from './themes'
 
 import { GlobalStyles } from './global-styles'
 import { ThemeProvider } from 'emotion-theming'
 import { PageNavigation } from './page-navigation'
-import { ProductOverview } from './product-overview'
 import { Footer } from './footer'
+import { ProductDetails } from './product-details'
+import { ProductOverview } from './product-overview'
 
-function App() {
+export function App() {
   return (
-    <React.Fragment>
+    <Router>
       <ThemeProvider theme={themes.main}>
         <GlobalStyles />
-        <PageNavigation />
-        <ProductOverview />
-        <Footer />
-      </ThemeProvider>
-    </React.Fragment>
+        <Route path="/" component={PageNavigation} />
+        <Route path="/product-details" component={ProductDetails} />
+        <Route path="/product-overview" component={ProductOverview} />
+      <Footer />
+    </ThemeProvider>
+  </Router>
   )
 }
-
-export default App
