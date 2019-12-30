@@ -1,5 +1,5 @@
 
-const breakpoints = ['500px', '650px' , '800px', '1000px', '1200px']
+const breakpoints = ['400px', '500px', '650px' , '800px', '1000px', '1200px']
 
 const mq = breakpoints.map(
   bp => `@media (max-width: ${bp})`
@@ -17,10 +17,18 @@ export const main = {
   mq,
   colors: {
     background: '#ffffff',
-    disabled: '#c9c9c9',
+    disabled: '#b4b3b4',
     danger: '#fa5847',
     title: "#333333",
-    text: "#CACACA",  
+    text: "#cacaca",
+    primaryButton: "#000000", 
+    button: "#b6b6b6",  
+    textDarker: "#8e8e8e", 
+    success: "#009f66",
+    marble: "#82522F",
+    nude: "#D4CBB1",
+    charcoal: "#534C47",
+    blueBackground: "#6bc5be",
   },
   fonts,
   fontSizes: [10, 12, 14, 16, 18, 20, 24, 32, 48],

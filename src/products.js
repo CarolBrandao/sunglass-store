@@ -2,37 +2,71 @@ export const products = [
 	{
 		"id": "1",
 		"title": "magnus",
-		"description": "harris",
-		"price": "$149"
+		"brand": "harris",
+		"description": "Designed in Paris. Plastic frame cat eye sunglasses with bright coloured geometric shapes.",
+		"price": "$149",
+		"material": "plastic",
+		"shape": "rounded square",
+		"dimensions": "48X20X148",
+		"colors": ["marble", "nude", "charcoal"]
 	},
 	{
 		"id": "2",
 		"title": "poolside",
-		"description": "blue",
-		"price": "$235"
+		"brand": "blue",
+		"description": "Designed in Paris. Plastic frame cat eye sunglasses with bright coloured geometric shapes.",
+		"price": "$235",
+		"material": "plastic",
+		"shape": "rounded square",
+		"dimensions": "48X20X148",
+		"colors": ["marble", "nude", "charcoal"]
 	},
 	{
 		"id": "3",
 		"title": "hsp",
-		"description": "lens",
-		"price": "$89"
+		"brand": "lens",
+		"description": "Designed in Paris. Plastic frame cat eye sunglasses with bright coloured geometric shapes.",
+		"price": "$89",
+		"material": "plastic",
+		"shape": "rounded square",
+		"dimensions": "48X20X148",
+		"colors": ["marble", "nude", "charcoal"]
 	},
 	{
 		"id": "4",
 		"title": "muse",
-		"description": "lacoste",
-		"price": "$359"
+		"brand": "lacoste",
+		"description": "Designed in Paris. Plastic frame cat eye sunglasses with bright coloured geometric shapes.",
+		"price": "$359",
+		"material": "plastic",
+		"shape": "rounded square",
+		"dimensions": "48X20X148",
+		"colors": ["marble", "nude", "charcoal"]
 	},
 	{
 		"id": "5",
 		"title": "3025",
-		"description": "rayban",
-		"price": "$289"
+		"brand": "rayban",
+		"description": "Designed in Paris. Plastic frame cat eye sunglasses with bright coloured geometric shapes.",
+		"price": "$289",
+		"shape": "rounded square",
+		"dimensions": "48X20X148",
+		"colors": ["marble", "nude", "charcoal"]
 	},
 	{
 		"id": "6",
 		"title": "aviator",
-		"description": "rayban",
-		"price": "$149"
+		"brand": "rayban",
+		"description": "Designed in Paris. Plastic frame cat eye sunglasses with bright coloured geometric shapes.",
+		"price": "$149",
+		"material": "plastic",
+		"shape": "rounded square",
+		"dimensions": "48X20X148",
+		"colors": ["marble", "nude", "charcoal"]
 	}
 ]
+
+
+export function getProductById(id){
+	return products.find(product => product.id === id)
+}

@@ -77,6 +77,7 @@ function CssBase() {
             overflowX: 'hidden',
             padding: '0px',
             margin: '0px',
+            textTransform: 'uppercase',
           })({ theme })}
         }
 

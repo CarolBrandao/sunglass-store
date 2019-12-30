@@ -14,12 +14,12 @@ const Sunglass = styled.div`
 	background-image: ${props => `url(${props.src})`};
 	position: relative;
 	${props => 
-  	`${props.theme.mq[1]}{
+  	`${props.theme.mq[2]}{
       height: 650px;
      }`
   }
   ${props => 
-  	`${props.theme.mq[0]}{
+  	`${props.theme.mq[1]}{
       height: 400px;
      }`
   }
@@ -53,36 +53,43 @@ const TextOverlay = styled.div`
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  text-transform: uppercase;
 `
 
 const Title = styled.span`
 	font-weight: bold;
-	text-transform: uppercase;
 	color: ${props => props.theme.colors.title};
 	padding-top: ${props => `${props.theme.space[1]}px`};
 	display: block;
+  ${props => 
+    `${props.theme.mq[2]}{
+      padding: ${props.theme.space[1]}px;
+     }`
+  }
 `
 
 const Description = styled.div`
 	display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
   color: ${props => props.theme.colors.text};
   padding-top: 10px;
+  ${props => 
+    `${props.theme.mq[2]}{
+      padding: 0px ${props.theme.space[1]}px ${props.theme.space[1]}px;
+     }`
+  }
 `
 
 
 
 export function ProductCard(props){
 	return (
-		<Product>
+		<Product href={`product-details/${props.id}`}>
 			<Sunglass src={`thumbnails/${props.title}.jpg`}>
 				<Overlay><TextOverlay>Available in </TextOverlay></Overlay>
 			</Sunglass>
 			<Title>{props.title}</Title>
 			<Description>
-				<span>{props.description}</span>
+				<span>{props.brand}</span>
 				<span>{props.price}</span>
 			</Description>
 		</Product>
