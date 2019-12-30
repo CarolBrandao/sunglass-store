@@ -1,68 +1,37 @@
-This project is basically two screens of a frontend application for a mockup sunglass e-commerce store. The product overview and a product detail screen.
+This project is basically two screens of a frontend application for a mockup sunglass e-commerce store. The product overview and a product detail screen. The application is available [here](http://sunglass-store.herokuapp.com/product-overview).
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+0. Prerequisites:
 
-### `npm start`
+  - **NodeJS** to use all the tooling. If you don’t have it installed yet, you might want to use [N](https://github.com/tj/n) for easier switching between versions. [`n-install`](https://github.com/mklement0/n-install) allows you to install it quickly in a correct way.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  - **Yarn** for package management. Yarn may be [installed in several ways](https://yarnpkg.com/en/docs/install), pick one that suits you.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Clone the repo:
 
-### `npm test`
+    ```bash
+    git clone https://github.com/CarolBrandao/sunglass-store.git
+    ```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Go to cloned directory:
 
-### `npm run build`
+    ```bash
+    cd ./sunglass-store
+    ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+    ```bash
+    yarn install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Run the build tool:
 
-### `npm run eject`
+    ```bash
+    yarn start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
