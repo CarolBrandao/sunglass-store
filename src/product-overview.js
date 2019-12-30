@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { ProductCard } from './product-card'
-import { products } from './products'
 import { Line } from './common'
 import { Footer } from './footer'
+import * as products from './products'
+import { Filters } from './filters'
 
 const Grid = styled.div`
   padding: ${props => props.theme.space[4]}px;
@@ -36,11 +37,20 @@ const Grid = styled.div`
 `
 
 export function ProductOverview(){
+
+  const [color, setColor] = React.useState(undefined)
+
+  const filter = color && {color: color}
+
+  const myProducts = products.getProducts(filter)
+
   return (
     <React.Fragment>
       <Line />
+      <Filters onFilter={setColor} color={color} />
+      <Line />
       <Grid>
-        {products.map(product => <ProductCard 
+        {myProducts.map(product => <ProductCard 
           key={product.id} 
           id={product.id} 
           title={product.title} 

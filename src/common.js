@@ -14,6 +14,24 @@ export const Line = styled.hr`
   }
 `
 
+export const ColorOptions = styled.div`
+  margin: 0 auto;
+  padding: ${props => props.theme.space[0]}px 0px;
+`
+
+export const Color = styled.div`
+  width: 15px;
+  height: 15px;
+  background-color: ${props => props.theme.colors[props.color]};
+  border-radius: 9999px;
+  margin-right: 2px;
+  border:  ${props => props.checked? 'double 3px #fff' : 'none'};
+`
+export const ColorWrapper = styled.div`
+  display: inline-flex;
+  padding-right: 10px;
+`
+
 export const Button = styled.button`
   color: ${props => props.theme.colors.button};
   background-color: transparent;

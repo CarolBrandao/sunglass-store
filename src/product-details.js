@@ -4,7 +4,7 @@ import querystring from 'querystring'
 
 import styled from '@emotion/styled'
 import { getProductById } from './products'
-import { Line, PrimaryButton , Button, RadioButton } from './common'
+import { Line, PrimaryButton , Button, RadioButton, Color, ColorOptions, ColorWrapper } from './common'
 import { Footer } from './footer'
 
 const Wrapper = styled.div`
@@ -83,11 +83,6 @@ const SelectColor = styled.span`
   text-align: center;
 `
 
-const ColorOptions = styled.div`
-  margin: 0 auto;
-  padding: ${props => props.theme.space[0]}px 0px;
-`
-
 const ButtonWrapper= styled.div`
   padding: ${props => props.theme.space[2]}px 0px;
   text-align: center
@@ -128,19 +123,6 @@ const SeeMore = styled.div`
 const FooterWrapper = styled.div`
   height: 100%;
   position: relative;
-`
-
-const Color = styled.div`
-  width: 15px;
-  height: 15px;
-  background-color: ${props => props.theme.colors[props.color]};
-  border-radius: 9999px;
-  margin-right: 2px;
-  border:  ${props => props.checked? 'double 3px #fff' : 'none'};
-`
-const ColorWrapper = styled.div`
-  display: inline-flex;
-  padding-right: 10px;
 `
 
 export function ProductDetails(props){
