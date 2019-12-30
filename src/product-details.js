@@ -1,4 +1,7 @@
 import React from 'react'
+import { useHistory, useLocation } from 'react-router-dom'
+import querystring from 'querystring'
+
 import styled from '@emotion/styled'
 import { getProductById } from './products'
 import { Line, PrimaryButton , Button, RadioButton } from './common'
@@ -145,12 +148,14 @@ export function ProductDetails(props){
   const [color, setColor] = React.useState('')
 
   const id = props.match.params.id
+  const product = getProductById(id)
+  const history = useHistory()
+  const location = useLocation()
+  const basketAmount = parseInt(querystring.parse(location.search.substr(1)).basket) || 0
 
-  if(!id){
+  if(!id || !product){
     return null
   }
-
-  const product = getProductById(id)
 
   return (
     <Wrapper>
@@ -181,8 +186,12 @@ export function ProductDetails(props){
         </ColorOptions>
         <Line wide />
         <ButtonWrapper>
-          {/* TODO: Increment counter when click button*/}
-          <PrimaryButton disabled={!Boolean(color)} onClick={() => alert('Added to bag')}> ADD TO BAG </PrimaryButton>
+          <PrimaryButton 
+            disabled={!Boolean(color)} 
+            onClick={() => history.replace(`${location.pathname}?basket=${basketAmount + 1}`)}
+          > 
+            ADD TO BAG 
+          </PrimaryButton>
         </ButtonWrapper>
         <Description>{product.description}</Description>
         <Space>

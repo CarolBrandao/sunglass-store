@@ -1,4 +1,6 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
+import querystring from 'querystring'
 import styled from '@emotion/styled'
 
 const NavWrapper = styled.nav`
@@ -69,7 +71,9 @@ const notAvailable = () => alert('Page not found')
 
 export function PageNavigation(props) {
 
-  const basketNumber = 22
+  const location = useLocation()
+  const basketAmount = parseInt(querystring.parse(location.search.substr(1)).basket) || null
+
   return (
     <React.Fragment>
       <NavWrapper>
@@ -90,7 +94,7 @@ export function PageNavigation(props) {
               <Item onClick={notAvailable}><img src="/images/search.svg" alt="search" /></Item>
               <Basket onClick={notAvailable}>
                 <img src="/images/cart.svg" alt="cart" />
-                {basketNumber && <BasketNumber>{basketNumber}</BasketNumber>}
+                {basketAmount && <BasketNumber>{basketAmount}</BasketNumber>}
               </Basket>
             </Items>
           </div>
